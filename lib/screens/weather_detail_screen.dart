@@ -5,10 +5,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:weather_app/constants/text_styles.dart';
 import 'package:weather_app/extensions/dateTime.dart';
 import 'package:weather_app/extensions/strings.dart';
-import 'package:weather_app/providers/get_weather_by_city_provider.dart';
+import 'package:weather_app/providers/providers.dart';
 import 'package:weather_app/views/error_text.dart';
 import 'package:weather_app/views/gradient_container.dart';
-import 'package:weather_app/views/hourly_forecast_view.dart';
 import 'package:weather_app/views/loader_widget.dart';
 import 'package:weather_app/views/weather_info.dart';
 

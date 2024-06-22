@@ -6,7 +6,7 @@ import 'package:sizer/sizer.dart';
 import 'package:weather_app/constants/app_colors.dart';
 import 'package:weather_app/constants/text_styles.dart';
 import 'package:weather_app/extensions/int.dart';
-import 'package:weather_app/providers/hourly_weather_provider.dart';
+import 'package:weather_app/providers/providers.dart';
 import 'package:weather_app/utils/get_weather_icon.dart';
 import 'package:weather_app/views/error_text.dart';
 import 'package:weather_app/views/loader_widget.dart';

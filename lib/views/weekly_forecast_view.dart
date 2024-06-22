@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:weather_app/constants/app_colors.dart';
 import 'package:weather_app/constants/text_styles.dart';
 import 'package:weather_app/extensions/dateTime.dart';
-import 'package:weather_app/providers/weekly_weather_provider.dart';
+import 'package:weather_app/providers/providers.dart';
 import 'package:weather_app/utils/get_weather_icon.dart';
 import 'package:weather_app/views/error_text.dart';
 import 'package:weather_app/views/loader_widget.dart';
