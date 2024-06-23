@@ -74,7 +74,6 @@ class ApiHelper {
   static Future<Map<String, dynamic>> _fetchData(String url) async {
     try {
       final response = await dio.get(url);
-
       if (response.statusCode == 200) {
         return response.data;
       } else {

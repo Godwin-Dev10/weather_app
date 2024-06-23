@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sizer/sizer.dart';
 import 'package:weather_app/screens/home_screen.dart';
 
 void main() {
@@ -17,9 +16,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Sizer(
-        builder: (context, orientation, deviceType) {
-          return MaterialApp(
+    return MaterialApp(
             title: 'Weather App',
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
@@ -27,8 +24,6 @@ class MyApp extends StatelessWidget {
             ),
             home: HomeScreen(),
           );
-        },
-    );
   }
 }
 

@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 import 'package:weather_app/constants/text_styles.dart';
 import 'package:weather_app/views/famous_cities.dart';
 import 'package:weather_app/views/gradient_container.dart';

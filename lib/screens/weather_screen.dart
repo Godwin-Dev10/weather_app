@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sizer/sizer.dart';
 import 'package:weather_app/constants/text_styles.dart';
 import 'package:weather_app/extensions/dateTime.dart';
 import 'package:weather_app/providers/providers.dart';
@@ -27,20 +26,20 @@ class WeatherScreen extends ConsumerWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(weather.name, style: TextStyles.h1,),
-                SizedBox(height: 20.0.h,),
+                SizedBox(height: 20.0,),
                 Text(DateTime.now().dateTime, style: TextStyles.subtitleText,),
-                SizedBox(height: 30.0.h,),
+                SizedBox(height: 30.0,),
                 SizedBox(
-                  height: 260.h,
+                  height: 260,
                   child: Image.asset("assets/icons/${weather.weather[0].icon.replaceAll("n", "d")}.png"),
                 ),
-                SizedBox(height: 40.0.h,),
+                SizedBox(height: 40.0,),
                 Text(weather.weather[0].description, style: TextStyles.h2,),
               ],
             ),
-            SizedBox(height: 40.0.h,),
+            SizedBox(height: 40.0,),
             WeatherInfo(weather: weather),
-            SizedBox(height: 40.0.h,),
+            SizedBox(height: 40.0),
 
             // hourly forecast
             Row(
@@ -54,7 +53,7 @@ class WeatherScreen extends ConsumerWidget {
               ],
             ),
 
-            SizedBox(height: 15.0.h,),
+            SizedBox(height: 15.0,),
             HourlyForecastView(),
           ],
         );

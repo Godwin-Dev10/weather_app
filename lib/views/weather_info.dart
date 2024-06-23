@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 import 'package:weather_app/constants/text_styles.dart';
 import 'package:weather_app/extensions/double.dart';
 import 'package:weather_app/models/weather.dart';
@@ -14,7 +13,7 @@ class WeatherInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 30.0.w),
+      padding: EdgeInsets.symmetric(horizontal: 30.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -48,7 +47,7 @@ class WeatherInfoTile extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(title, style: TextStyles.subtitleText,),
-        SizedBox(height: 10.0.h,),
+        SizedBox(height: 10.0,),
         Text(value, style: TextStyles.h3,),
       ],
     );

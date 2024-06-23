@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sizer/sizer.dart';
 import 'package:weather_app/constants/app_colors.dart';
 import 'package:weather_app/constants/text_styles.dart';
 import 'package:weather_app/extensions/int.dart';
@@ -20,7 +19,7 @@ class HourlyForecastView extends ConsumerWidget {
     return hourlyWeatherData.when(
       data: (hourlyWeather) {
         return SizedBox(
-          height: 100.h,
+          height: 100,
           child: ListView.builder(
             itemCount: hourlyWeather.cnt,
             shrinkWrap: true,
@@ -60,24 +59,24 @@ class HourlyWeatherTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(right: 16.0.w, top: 12.0.h, bottom: 12.0.h,),
+      padding: EdgeInsets.only(right: 16.0, top: 12.0, bottom: 12.0),
       child: Material(
         color: active ? AppColors.lightBlue : AppColors.accentBlue,
         borderRadius: BorderRadius.circular(15.0),
         elevation: active ? 8 : 0,
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.0.w, vertical: 10.0.h),
+          padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset(getWeatherIcon(weatherCode: id), width: 50.w,),
-              SizedBox(width: 10.w,),
+              Image.asset(getWeatherIcon(weatherCode: id), width: 50),
+              SizedBox(width: 10,),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(hour, style: TextStyle(color: Colors.white),),
-                  SizedBox(height: 5.h,),
+                  SizedBox(height: 5,),
                   Text("${temp}o", style: TextStyles.h3,),
                 ],
               ),
